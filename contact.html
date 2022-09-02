@@ -35,7 +35,43 @@
         </nav>
     </header>
     <main>
-
+        <div class="contact-info">
+            <h1>Get in Touch</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="" style="width:100%" alt="contact-image">
+                </div>
+                <div class="column">
+                    <form id="contactForm">
+                        <h1>Contact Form</h1>
+                        <div>
+                            <input name="text" id="name" placeholder="Your name.." />
+                            <div id="nameError" class="error">Please enter your name</div>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="text" id="email" placeholder="Email address.." />
+                            <div id="emailError" class="error">Please enter a valid email address</div>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="text" id="email" placeholder="Subject.." />
+                            <div id="emailError" class="error">Please enter a subject</div>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="text" id="message" placeholder="Write something.. (min 25 characters)"
+                                style="height:200px" />
+                            <div id="messageError" class="error">Message must be at least 25 characters and can only
+                                contain alphanumeric
+                                characters.</div>
+                        </div>
+                        <br>
+                        <input type="submit" value="Submit" class="cta" />
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="copyright">
