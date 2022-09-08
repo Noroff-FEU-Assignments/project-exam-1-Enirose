@@ -46,25 +46,31 @@
                         <h1>Contact Form</h1>
                         <div>
                             <input name="text" id="name" placeholder="Your name.." />
-                            <div id="nameError" class="error">Please enter your name</div>
+                            <div id="nameError" class="error">
+                                Please enter your name..
+                            </div>
                         </div>
                         <br>
                         <div>
                             <input type="text" id="email" placeholder="Email address.." />
-                            <div id="emailError" class="error">Please enter a valid email address</div>
+                            <div id="emailError" class="error">
+                                Please enter a valid email address..
+                            </div>
                         </div>
                         <br>
                         <div>
-                            <input type="text" id="email" placeholder="Subject.." />
-                            <div id="emailError" class="error">Please enter a subject</div>
+                            <input type="text" id="subject" placeholder="Subject..(min. 15 characters)" />
+                            <div id="subjectError" class="error">
+                                Please enter a subject with min. 15 characters..
+                            </div>
                         </div>
                         <br>
                         <div>
-                            <input type="text" id="message" placeholder="Write something.. (min 25 characters)"
-                                style="height:200px" />
-                            <div id="messageError" class="error">Message must be at least 25 characters and can only
-                                contain alphanumeric
-                                characters.</div>
+                            <textarea name="text" id="message" cols="30" rows="10"
+                                placeholder="Write something.. (min. 25 characters)"></textarea>
+                            <div id="messageError" class="error">
+                                Message must be at least 25 characters and can only contain alphanumeric characters..
+                            </div>
                         </div>
                         <br>
                         <input type="submit" value="Submit" class="cta" />
@@ -78,6 +84,7 @@
             Copyright &copy; 2022 Blog | Designed by Ma Enirose
         </div>
     </footer>
+    <script src="js/contact.js" type="module"></script>
 </body>
 
 </html>

@@ -1,0 +1,49 @@
+/* Contact page*/
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #B4D2D9;
+}
+
+.contact-info {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.column,
+input {
+    width: 90%;
+    margin-top: 0px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form .cta {
+    padding: 10px 20px 10px 27px;
+    max-width: 150px;
+    margin-left: auto;
+}
+
+.error {
+    color: red;
+    display: none;
+}
