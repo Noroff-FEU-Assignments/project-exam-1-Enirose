@@ -10,7 +10,7 @@ textarea {
 }
 
 input[type=submit] {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 12px 20px;
     border: none;
     cursor: pointer;
@@ -25,10 +25,25 @@ input[type=submit]:hover {
     padding: 10px;
 }
 
-.column,
-input {
-    width: 90%;
-    margin-top: 0px;
+#contactForm {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 50px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffe5d8;
+    padding-top: 10px;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 20px rgb(46, 37, 2);
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    margin-left: 80px;
+    padding: 20px;
 }
 
 .row::after {

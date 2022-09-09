@@ -1,1 +1,18 @@
 @import url(/css/import/contact.css);
+@import url(/css/import/nav.css);
+
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 900;
+    font-size: 15px;
+    background-color: #ffe5d8;
+    color: #000000;
+    padding: 10px;
+}
