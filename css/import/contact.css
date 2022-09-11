@@ -20,6 +20,12 @@ input[type=submit]:hover {
     background-color: #B4D2D9;
 }
 
+.row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .contact-info {
     border-radius: 5px;
     padding: 10px;

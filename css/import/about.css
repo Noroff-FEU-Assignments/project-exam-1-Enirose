@@ -1,0 +1,15 @@
+.about1 {
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+}
+
+.about1 p {
+    padding: 2%;
+}
+
+.about1 img {
+    width: 40vw;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,5 +1,7 @@
 @import url(/css/import/contact.css);
 @import url(/css/import/nav.css);
+@import url(/css/import/about.css);
+@import url(/css/import/index.css);
 
 body {
     margin: 0%;
@@ -23,8 +25,15 @@ body {
     color: black;
     font-size: 20px;
     font-weight: 600;
-    box-shadow: 1px 1px 10px #ffe5d8;
+    box-shadow: 1px 1px 10px #492411;
     margin-top: 10px;
     transition: ease-out 0, 8s;
     cursor: pointer;
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+    align-items: center;
 }
