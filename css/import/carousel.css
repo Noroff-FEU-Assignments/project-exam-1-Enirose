@@ -1,0 +1,77 @@
+.carousel {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 5%;
+}
+
+.carousel-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.text {
+    color: black;
+    font-size: large;
+    font-style: italic;
+}
+
+.carousel-container .carouselfade,
+.carousel-container .carouselfade--hidden {
+    display: none;
+}
+
+.carousel-container .carouselfade--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+
+.slide-arrow {
+    background-color: #ffe5d8;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+}
+
+hr {
+    height: 2px;
+    background-color: #ffe5d8;
+    margin-top: 4%;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+    opacity: 1;
+}
+
+#slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.carouselfade {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+}

@@ -2,6 +2,7 @@
 @import url(/css/import/nav.css);
 @import url(/css/import/about.css);
 @import url(/css/import/index.css);
+@import url(/css/import/carousel.css);
 
 body {
     margin: 0%;
@@ -35,5 +36,4 @@ body {
 h1,
 h2 {
     text-align: center;
-    align-items: center;
 }
