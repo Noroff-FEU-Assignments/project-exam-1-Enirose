@@ -4,15 +4,15 @@
     text-align: center;
 }
 
-.blog-post .blog {
+/* .blog-post .blog {
     display: flex;
     justify-content: space-evenly
-}
+} */
 
 .blog-post {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 25px;
+    /* padding: 0 25px; */
     justify-content: center;
 }
 
@@ -22,18 +22,10 @@
     align-items: center;
     padding: 10px;
     margin: 20px;
-    box-shadow: 1px 1px 25px #ffe5d8;
+    box-shadow: 1px 1px 25px #fcc1a3;
 }
 
 .blog img {
-    width: 70vw;
+    width: 190px;
     object-fit: cover;
 }
-
-/* @media (min-width: 750px) {
-    .blog {
-        display: grid;
-        flex-wrap: wrap;
-    }
-
-} */

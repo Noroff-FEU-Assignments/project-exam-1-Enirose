@@ -10,15 +10,17 @@ textarea {
 }
 
 input[type=submit] {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 12px 20px;
     border: none;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #B4D2D9;
+    background-color: #f4501efc;
+    opacity: 1;
 }
+
 
 .row {
     align-items: center;

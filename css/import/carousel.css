@@ -75,3 +75,9 @@ hr {
     height: 100%;
     flex: 1 0 100%;
 }
+
+@media (min-width: 1000px) {
+    .carousel {
+        margin: 5px 50px 0px;
+    }
+}
