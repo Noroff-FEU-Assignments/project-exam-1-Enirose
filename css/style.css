@@ -43,15 +43,21 @@ body {
 h1,
 h2 {
     text-align: center;
+    color: #000000;
+    font-style: italic;
+}
+
+p {
+    color: #000000;
 }
 
 .loader {
-    margin-left: 50%;
+    /* margin-left: 50%; */
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    border-top: 16px solid darkred;
+    border-top: 16px solid #ffe5d8;
     animation: spin 2s linear infinite;
 }
 
