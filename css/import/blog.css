@@ -4,15 +4,10 @@
     text-align: center;
 }
 
-/* .blog-post .blog {
-    display: flex;
-    justify-content: space-evenly
-} */
-
 .blog-post {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 0 25px; */
+    padding: 0 25px;
     justify-content: center;
 }
 
