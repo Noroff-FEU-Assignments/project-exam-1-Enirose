@@ -2,9 +2,10 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const blogPost = document.querySelector(".blog-post");
 const id = params.get("id");
+// console.log(id);
 
-const url = "https://blog-api.enirosehellum.com/wp-json/wp/v2/posts/?_embed" + "id";
-// console.log(url);
+const url = `https://blog-api.enirosehellum.com/wp-json/wp/v2/posts/${id}?_embed`;
+console.log(url);
 
 async function fetchApi() {
 
@@ -17,14 +18,16 @@ async function fetchApi() {
 
         blogPost.innerHTML +=
             `<div class="blog-post">
-                    <img src="${result[i]._embedded[" wp:featuredmedia"][0].source_url}" alt="Blog"</img>
-                    <h2>${result[i].title.rendered}</h2>
-                    <p>${result[i].excerpt.rendered}</p>
-                </div >`
+                <div class = "blog">
+                    <img src="${result._embedded["wp:featuredmedia"][0].source_url}" alt = "Blog">
+                    <h2> ${result.title.rendered}</h2 >
+                    <p>${result.excerpt.rendered}</p>
+                </div>
+            </div >`
 
     }
     catch (error) {
-        console.log("An error occured");
+        console.log("error");
         blogPost.innerHTML = errorMessage("An error occured while fetching the results");
     }
 }
