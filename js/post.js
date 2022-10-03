@@ -27,6 +27,7 @@ async function fetchApi() {
                     <h2> ${result.title.rendered}</h2 >
                     <p>${result.excerpt.rendered}</p>
                 </div>
+                <a href="blog.html" class="cta"> Back </a>
             </div >`
 
     }
@@ -34,6 +35,29 @@ async function fetchApi() {
         console.log("error");
         blogPost.innerHTML = errorMessage("An error occured while fetching the results");
     }
+
+
+    const apiImgs = document.querySelector(".blog img");
+    const myModal = document.querySelector(".modal"); //wrapper
+    const modalImg = document.querySelector(".modal-img");
+    const span = document.querySelector(".close");
+
+
+    apiImgs.onclick = function (event) {
+        myModal.style.display = "block";
+        modalImg.src = event.target.src;
+    }
+
+    span.onclick = function () {
+        myModal.style.display = "none";
+    }
+
+    // window.onclick = function (event) {
+    //     if (event.target == myModal) {
+    //         myModal.style.display = "none";
+    //     }
+    // }
+
 }
 
 fetchApi();

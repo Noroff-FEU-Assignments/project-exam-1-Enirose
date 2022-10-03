@@ -1,5 +1,4 @@
-const url = "https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?_embed";
-let nextPage = "https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?_embed&page=2";
+const url = 'https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?_embed';
 const blogPost = document.querySelector(".blog-post");
 const viewBtn = document.querySelector(".cta")
 
