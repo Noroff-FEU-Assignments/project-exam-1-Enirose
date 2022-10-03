@@ -1,6 +1,5 @@
-
 const url = "https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?_embed";
-const nextPage = "https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?_embed&page=2";
+let nextPage = "https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?_embed&page=2";
 const blogPost = document.querySelector(".blog-post");
 const viewBtn = document.querySelector(".cta")
 
@@ -10,12 +9,7 @@ async function fetchApi() {
     try {
         const response = await fetch(url);
         const result = await response.json();
-        console.log(result);
-
-        // viewBtn.onclick = function () {
-        //     fetchApi(nextPage);
-        //     viewBtn.style.display = "none";
-        // }
+        // console.log(result);
 
         blogPost.innerHTML = "";
 
@@ -38,3 +32,13 @@ async function fetchApi() {
 
 fetchApi();
 
+
+////////// adding view more posts///////////
+viewBtn.onclick = function () {
+    const newUrl = url + nextPage;
+    blogPost.innerHTML = "";
+    fetchApi(newUrl);
+    console.log(newUrl);
+    viewBtn.style.display = "none";
+
+};

@@ -4,6 +4,7 @@
 @import url(/css/import/index.css);
 @import url(/css/import/carousel.css);
 @import url(/css/import/blog.css);
+@import url(/css/import/modal.css);
 
 body {
     margin: 0%;
