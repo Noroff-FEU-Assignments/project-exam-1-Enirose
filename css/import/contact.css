@@ -16,10 +16,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: #f4501efc;
-    opacity: 1;
-}
+/* input[type=submit]:hover {} */
 
 
 .row {

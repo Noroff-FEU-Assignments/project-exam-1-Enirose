@@ -23,7 +23,7 @@ body {
 }
 
 .cta {
-    background: #f4501efc;
+    background: #406022;
     padding: 10px 40px;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -50,6 +50,9 @@ h2 {
 
 p {
     color: #000000;
+    line-height: 2;
+    font-size: 20px;
+    margin: 0px 0px 35px 0px;
 }
 
 .loader {
@@ -70,3 +73,12 @@ p {
     100% {
         transform: rotate(360deg);
     }
+}
+
+@media (min-width: 1000px) {
+    h2 {
+        font-size: 30px;
+    }
+
+
+}

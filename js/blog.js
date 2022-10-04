@@ -1,7 +1,8 @@
 const url = 'https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?_embed';
+// let loadMore = 'https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?per_page=20&_embed';
 const blogPost = document.querySelector(".blog-post");
 const viewBtn = document.querySelector(".cta")
-
+// const addMorePosts = "&per_page=20"
 
 async function fetchApi() {
 
@@ -29,15 +30,17 @@ async function fetchApi() {
     }
 }
 
+
 fetchApi();
 
+// ////////// adding view more posts///////////
 
-////////// adding view more posts///////////
 viewBtn.onclick = function () {
-    const newUrl = url + nextPage;
     blogPost.innerHTML = "";
-    fetchApi(newUrl);
-    console.log(newUrl);
+    let loadMore = 'https://blog-api.enirosehellum.com/wp-json/wp/v2/posts?per_page=20&_embed';
+    console.log(loadMore);
+    fetchApi(loadMore);
     viewBtn.style.display = "none";
 
 };
+

@@ -1,6 +1,6 @@
 .blog-container {
-    margin: 5px;
     padding: 10px;
+    margin: 5px;
     text-align: center;
 }
 
@@ -9,6 +9,14 @@
     flex-wrap: wrap;
     padding: 0 25px;
     justify-content: center;
+}
+
+.blog-post2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 99px;
+    padding: 0px 25px;
 }
 
 .blog {
@@ -21,6 +29,29 @@
 }
 
 .blog img {
-    width: 190px;
+    width: 250px;
     object-fit: cover;
+    padding: 10px 0px 0px 0px;
+}
+
+.blog p {
+    padding: 0px 35px;
+}
+
+@media (min-width: 750px) {
+    .blog-post2 {
+        margin: 30px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .blog-post2 {
+        margin: 2% 20%;
+    }
+
+    .blog img {
+        width: 30vw;
+    }
+
+
 }

@@ -1,7 +1,6 @@
 .carousel {
     overflow: hidden;
     position: relative;
-    padding-bottom: 5%;
 }
 
 .carousel-container {
@@ -15,8 +14,10 @@
 
 .text {
     color: black;
-    font-size: large;
+    font-size: 20px;
     font-style: italic;
+    font-weight: 900;
+    margin: 20px 0px 50px 0px;
 }
 
 .carousel-container .carouselfade,
@@ -37,7 +38,7 @@
     font-size: 3rem;
     position: absolute;
     display: flex;
-    top: 0;
+    top: -100px;
     bottom: 0;
     margin: auto;
     height: 4rem;
@@ -50,7 +51,7 @@
 hr {
     height: 2px;
     background-color: #ffe5d8;
-    margin-top: 4%;
+    margin: 50px 0px 0px 0px;
 }
 
 .slide-arrow:hover,
@@ -80,4 +81,10 @@ hr {
     .carousel {
         margin: 5px 50px 0px;
     }
+
+    .text {
+        font-size: 30px;
+    }
+
+
 }
