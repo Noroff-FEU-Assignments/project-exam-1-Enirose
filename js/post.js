@@ -14,7 +14,7 @@ async function fetchApi() {
         const response = await fetch(url);
         const result = await response.json();
         console.log(result);
-        document.title = Blog | `${result.title.rendered}`;
+        document.title = `${result.title.rendered}`;
 
         loader.classList.remove("loader");
 
