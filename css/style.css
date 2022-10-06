@@ -35,6 +35,7 @@ body {
     text-align: center;
     opacity: 0.6;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .cta:hover {
@@ -45,14 +46,20 @@ h1,
 h2 {
     text-align: center;
     color: #000000;
+}
+
+h2 {
     font-style: italic;
 }
+
 
 p {
     color: #000000;
     line-height: 2;
     font-size: 20px;
     margin: 0px 0px 35px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
 }
 
 .loader {
