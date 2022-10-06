@@ -1,6 +1,6 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-const blogPost = document.querySelector(".blog-post2");
+const blogPost = document.querySelector(".blog-post");
 const id = params.get("id");
 // console.log(id);
 
@@ -14,7 +14,7 @@ async function fetchApi() {
         const response = await fetch(url);
         const result = await response.json();
         console.log(result);
-        document.title = "My Blog | ${result.title.rendered}";
+        document.title = `${result.title.rendered}`;
 
         loader.classList.remove("loader");
 
