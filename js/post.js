@@ -14,7 +14,7 @@ async function fetchApi() {
         const response = await fetch(url);
         const result = await response.json();
         console.log(result);
-        document.title = `${result.title.rendered}`;
+        document.title = Blog | `${result.title.rendered}`;
 
         loader.classList.remove("loader");
 
@@ -52,21 +52,7 @@ async function fetchApi() {
         myModal.style.display = "none";
     }
 
-    // window.onclick = function (event) {
-    //     if (event.target == myModal) {
-    //         myModal.style.display = "none";
-    //     }
-    // }
-
 }
 
 fetchApi();
 
-
-// const modalContainer = document.querySelector(".modal");
-// const img = document.querySelector(".modal_img");
-// const modImg = document.querySelector("#img")
-
-// img.onclick = function () {
-//     modalContainer.style.display = "block";
-//     modImg.src = this.${ result._embedded["wp:featuredmedia"][0].source_url };
