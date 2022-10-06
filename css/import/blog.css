@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 20px;
+    margin: 20px 20%;
     box-shadow: 1px 1px 25px #fcc1a3;
 }
 
@@ -28,19 +28,23 @@
 }
 
 .blog p {
-    padding: 0px 35px;
+    padding: 0 15px;
 }
 
 @media (min-width: 750px) {
-    .blog-post2 {
-        margin: 30px;
+    .blog p {
+        padding: 0px 50px;
     }
 }
 
 @media (min-width: 1000px) {
 
     .blog img {
-        width: 300px;
+        width: 400px;
+    }
+
+    .blog p {
+        padding: 0px 10%;
     }
 
 
