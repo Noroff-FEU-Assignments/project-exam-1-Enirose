@@ -39,7 +39,7 @@ For our project exam, we were given a task to create a blog of our own. This web
 
 ## Getting started
 1. Clone the repo
-- git clone git@github.com:https://github.com/Enirose/Semester-project1_Ma-Enirose.git
+- git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-Enirose.git
 
 2. Open with Visual Studio Code, use Live server (VSC extension) to view the site.
 
